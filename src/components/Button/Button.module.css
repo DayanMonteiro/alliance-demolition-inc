@@ -1,0 +1,52 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: #f4b400;
+  color: #111;
+}
+
+.primaryRadios {
+  background: #f4b400;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.dark {
+  background-color: #111;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.sm {
+  height: 30px;
+  padding: 0 18px;
+}
+
+.md {
+  height: 40px;
+  padding: 0 28px;
+}
+
+.lg {
+  height: 50px;
+  padding: 0 40px;
+}

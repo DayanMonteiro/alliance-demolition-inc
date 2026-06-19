@@ -1,0 +1,52 @@
+.section {
+  background: #f5f5f5;
+
+  padding: 100px 24px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 3rem;
+  font-weight: 300;
+
+  color: #333;
+
+  margin-bottom: 48px;
+}
+
+.container p {
+  color: #555;
+
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  margin-bottom: 28px;
+}
+
+.container b {
+  color: #111;
+}
+
+.container h3 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+}

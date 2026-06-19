@@ -1,0 +1,15 @@
+.ContactContainer {
+  width: 100%;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: #333333;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}

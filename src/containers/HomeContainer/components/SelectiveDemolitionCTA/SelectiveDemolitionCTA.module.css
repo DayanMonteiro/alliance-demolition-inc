@@ -1,0 +1,118 @@
+.SelectiveDemolitionCTA {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/images/selectiveDemolition.png");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1000px;
+
+  text-align: center;
+
+  padding: 40px;
+}
+
+.content h2 {
+  color: #ffffff;
+
+  font-size: 3.5rem;
+  font-weight: 300;
+
+  margin-bottom: 32px;
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.95);
+
+  font-size: 1.2rem;
+  line-height: 1.4;
+
+  margin-bottom: 24px;
+}
+
+.actions {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.callButton,
+.messageButton {
+  width: 240px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.callButton {
+  background: #111;
+  color: white;
+}
+
+.messageButton {
+  background: var(--primary);
+  color: #111;
+}
+
+.callButton:hover,
+.messageButton:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .SelectiveDemolitionCTA {
+    min-height: auto;
+
+    padding: 80px 24px;
+  }
+
+  .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .callButton,
+  .messageButton {
+    width: 100%;
+    max-width: 320px;
+  }
+}

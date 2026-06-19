@@ -1,0 +1,58 @@
+.TopBar {
+  background-color: #171717;
+  color: #fff;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+}
+
+.content p {
+  color: #fff;
+  margin: 0;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    height: auto;
+    padding: 12px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .separator {
+    display: none;
+  }
+}

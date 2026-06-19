@@ -1,0 +1,81 @@
+.ServiceAreaSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .title {
+    color: #333333;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .description {
+    max-width: 1250px;
+    color: #555555;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    .linkButton {
+      min-height: 42px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0 24px;
+
+      background-color: #333333;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 0.95rem;
+      font-weight: 500;
+
+      transition: all 0.25s ease;
+    }
+
+    .linkButton:hover {
+      background-color: var(--secondary);
+      color: #111111;
+
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ServiceAreaSection {
+    margin-bottom: 60px;
+  }
+
+  .ServiceAreaSection h2 {
+    font-size: 2rem;
+  }
+
+  .ServiceAreaSection p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .linkButton {
+    width: 100%;
+    max-width: 360px;
+  }
+}

@@ -1,0 +1,37 @@
+.section {
+  padding: 40px 24px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.serviceBlock {
+  margin-bottom: 16px;
+}
+
+.serviceBlock h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.serviceBlock p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.serviceBlock strong {
+  color: #222;
+  font-weight: 700;
+}
