@@ -1,7 +1,16 @@
+"use client";
+
 import Button from "../Button";
 import styles from "./ExcavatingMachine.module.css";
+import { useRouter } from "next/navigation";
 
 const ExcavatingMachine = () => {
+    const router = useRouter();
+  
+    const handleGoToContact = () => {
+      router.push("/contact");
+    };
+
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
@@ -28,8 +37,7 @@ const ExcavatingMachine = () => {
         </p>
 
         <div className={styles.actions}>
-          {/* ENVIAR PARA A PAGINA DE CONTATO COM O FORMULÁRIO */}
-          <Button href="tel:+16509317775" variant="primaryRadios" size="lg">
+          <Button onClick={handleGoToContact} variant="primaryRadios" size="lg">
             Get Free Estimate
           </Button>
         </div>

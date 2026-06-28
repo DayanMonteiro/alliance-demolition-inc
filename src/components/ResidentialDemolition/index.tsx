@@ -1,5 +1,6 @@
-import ServiceHighlights from "@/components/ServiceHighlights";
 
+
+import ServiceHighlights from "../ServiceHighlights";
 import styles from "./ResidentialDemolition.module.css";
 
 const ResidentialDemolition = () => {

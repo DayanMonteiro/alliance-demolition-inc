@@ -71,10 +71,6 @@ const Menu = () => {
 
                   {isDesktopServicesOpen && (
                     <div className={styles.dropdownMenu}>
-                      <Link href="/services" onClick={closeDesktopServices}>
-                        ALL SERVICES
-                      </Link>
-
                       {servicesMenuItems.map((service) => (
                         <Link
                           key={service.href}
@@ -141,10 +137,6 @@ const Menu = () => {
 
                   {isMobileServicesOpen && (
                     <div className={styles.mobileSubmenu}>
-                      <Link href="/services" onClick={closeMobileMenu}>
-                        ALL SERVICES
-                      </Link>
-
                       {servicesMenuItems.map((service) => (
                         <Link
                           key={service.href}

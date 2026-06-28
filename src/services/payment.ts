@@ -43,11 +43,11 @@ export const socialMedia = [
   {
     name: "Facebook",
     image: "/social/facebook.svg",
-    href: "https://www.facebook.com/seu-perfil",
+    href: "https://www.facebook.com/profile.php?id=100072069476713",
   },
   {
     name: "Instagram",
     image: "/social/instagram.svg",
-    href: "https://www.instagram.com/seu-perfil",
+    href: "https://www.instagram.com/alliancedemolition/",
   },
 ];

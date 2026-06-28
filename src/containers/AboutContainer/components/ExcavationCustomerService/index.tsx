@@ -15,16 +15,16 @@ const ExcavationCustomerService = () => {
       <div className={styles.overlay} />
 
       <div className={styles.container}>
-        <h2>{content.title}</h2>
+        <h2 className={styles.title}>{content.title}</h2>
 
         {content.paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p className={styles.text} key={index}>{paragraph}</p>
         ))}
 
-        <h3>{content.secondaryTitle}</h3>
+        <h3 className={styles.secondaryTitle} >{content.secondaryTitle}</h3>
 
         {content.secondaryParagraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p className={styles.text} key={index}>{paragraph}</p>
         ))}
 
         <div className={styles.actions}>

@@ -1,0 +1,11 @@
+import ServiceAreaDetailsContainer from "@/src/containers/ServiceAreaDetailContainer";
+import { serviceAreaDetailsContent } from "@/src/containers/ServiceAreaDetailContainer/definitions";
+
+
+export default function SanMateoExcavationCompanyPage() {
+  return (
+    <ServiceAreaDetailsContainer
+      content={serviceAreaDetailsContent.sanMateoExcavationCompany}
+    />
+  );
+}

@@ -2,7 +2,10 @@
 
 import { FormEvent, useState } from "react";
 import { ValidationError } from "yup";
+
+
 import styles from "./ContactForm.module.css";
+
 import { contactSchema } from "@/src/services/contactSchema";
 import { formatUSPhoneNumber } from "@/src/helpers/functions";
 import InputComponent from "@/src/components/InputComponent";
@@ -27,6 +30,9 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState<ContactFormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [submitError, setSubmitError] = useState("");
 
   const handleValidate = async () => {
     try {
@@ -71,6 +77,9 @@ const ContactForm = () => {
       ...previousState,
       [name]: "",
     }));
+
+    setSuccessMessage("");
+    setSubmitError("");
   };
 
   const handleTextareaChange = (
@@ -87,6 +96,9 @@ const ContactForm = () => {
       ...previousState,
       [name]: "",
     }));
+
+    setSuccessMessage("");
+    setSubmitError("");
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -98,14 +110,39 @@ const ContactForm = () => {
       return;
     }
 
-    console.log("Contact form data:", formData);
+    try {
+      setIsSubmitting(true);
+      setSubmitError("");
+      setSuccessMessage("");
 
-    // Integração futura:
-    // await fetch("/api/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(formData),
-    // });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send message.");
+      }
+
+      setSuccessMessage("Message sent successfully!");
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Contact form error:", error);
+      setSubmitError("We could not send your message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -154,8 +191,16 @@ const ContactForm = () => {
           required
         />
 
+        {successMessage && (
+          <p className={styles.successMessage}>{successMessage}</p>
+        )}
+
+        {submitError && <p className={styles.errorMessage}>{submitError}</p>}
+
         <div className={styles.submitButton}>
-          <Button variant={"secondary"}>SEND MESSAGE</Button>
+          <Button type="submit" variant="secondary" disabled={isSubmitting}>
+            {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
+          </Button>
         </div>
       </div>
     </form>

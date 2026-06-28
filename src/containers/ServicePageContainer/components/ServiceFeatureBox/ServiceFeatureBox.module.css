@@ -1,0 +1,58 @@
+.ServiceFeatureBox {
+  width: 100%;
+  max-width: 720px;
+
+  background-color: #ffc85a;
+
+  border-radius: 16px;
+
+  padding: 38px 48px;
+
+  margin: 40px 0;
+}
+
+.intro {
+  color: #222222 !important;
+
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+
+  margin-bottom: 20px !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px 50px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  color: #111111;
+
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.arrow {
+  color: #ffffff;
+  font-size: 0.75rem;
+  margin-top: 3px;
+}
+
+@media (max-width: 700px) {
+  .ServiceFeatureBox {
+    max-width: 100%;
+    padding: 30px 26px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

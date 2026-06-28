@@ -1,6 +1,6 @@
 .PaymentMethods {
   background-color: #1f1f22;
-  padding: 20px 24px;
+  padding: 40px 24px;
   width: 100%;
 }
 
@@ -13,10 +13,20 @@
 }
 
 .section {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.section h3 {
+.sectionsocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
@@ -26,11 +36,10 @@
 .iconGrid {
   display: flex;
   flex-wrap: wrap;
-
   gap: 14px;
 }
 
-.iconWrapper {
+.IconWrapper {
   width: 52px;
   height: 52px;
 
@@ -39,26 +48,15 @@
   justify-content: center;
 
   border-radius: 50%;
-
-  background-color: #0d66c2;
-
+  background-color: #fff;
   color: white;
-
   text-decoration: none;
-
   transition: all 0.25s ease;
 }
 
-.iconWrapper:hover {
+.IconWrapper:hover {
   transform: translateY(-3px);
-
-  background-color: var(--primary);
-  color: #111;
-}
-
-.iconWrapper svg {
-  width: 26px;
-  height: 26px;
+  background-color: #969594;
 }
 
 @media (max-width: 768px) {

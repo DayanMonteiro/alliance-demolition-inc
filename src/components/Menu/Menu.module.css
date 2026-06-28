@@ -11,11 +11,9 @@
   max-width: 1400px;
   margin: 0 auto;
   height: 55px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 24px;
 }
 
@@ -48,26 +46,19 @@
 .menuLink,
 .menuLinkButton {
   height: 55px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-
   padding: 0 22px;
-
   color: #1e1e1e;
   text-decoration: none;
-
   font-size: 1rem;
   font-weight: 700;
   font-family: inherit;
-
   border: none;
   background-color: transparent;
-
   cursor: pointer;
-
   transition: background-color 0.2s ease;
 }
 
@@ -79,9 +70,7 @@
 
 .dropdownWrapper {
   position: relative;
-
   height: 55px;
-
   display: flex;
   align-items: center;
 }
@@ -90,36 +79,25 @@
   position: absolute;
   top: 55px;
   left: 0;
-
   width: 340px;
-
   display: flex;
   flex-direction: column;
-
   padding: 18px 0;
-
   background-color: #f5f5f5;
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
-
   z-index: 10000;
 }
 
 .dropdownMenu a {
   width: 100%;
-
   display: block;
-
   padding: 13px 28px;
-
   color: #111111;
   text-decoration: none;
-
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.2;
-
   white-space: nowrap;
-
   transition:
     background-color 0.2s ease,
     padding-left 0.2s ease;
@@ -132,10 +110,8 @@
 
 .mobileButton {
   display: none;
-
   background: none;
   border: none;
-
   cursor: pointer;
 }
 
@@ -166,9 +142,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-left: auto;
-
     width: 48px;
     height: 48px;
   }
@@ -179,31 +153,22 @@
 
   .mobileMenu {
     width: 100%;
-
     display: flex;
     flex-direction: column;
-
     background-color: #ffffff;
-
     border-top: 1px solid #eeeeee;
-
     animation: slideDown 0.2s ease;
-
     position: relative;
     z-index: 9998;
   }
 
   .mobileMenu a {
     display: block;
-
     padding: 18px 24px;
-
     color: #333333;
     text-decoration: none;
-
     font-size: 1rem;
     font-weight: 700;
-
     border-bottom: 1px solid #eeeeee;
   }
 
@@ -213,28 +178,21 @@
 
   .mobileDropdown {
     width: 100%;
-
     border-bottom: 1px solid #eeeeee;
   }
 
   .mobileDropdownButton {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 18px 24px;
-
     background-color: #ffffff;
     border: none;
-
     color: #333333;
-
     font-size: 1rem;
     font-weight: 700;
     font-family: inherit;
-
     cursor: pointer;
   }
 
@@ -251,13 +209,10 @@
 
   .mobileSubmenu a {
     padding: 15px 40px;
-
     color: #333333;
     text-decoration: none;
-
     font-size: 0.9rem;
     font-weight: 700;
-
     border-top: 1px solid #e7e7e7;
     border-bottom: none;
   }

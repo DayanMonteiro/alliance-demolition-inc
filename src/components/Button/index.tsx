@@ -6,6 +6,9 @@ interface ButtonProps {
   href?: string;
   variant?: "primary" | "primaryRadios" | "secondary" | "dark";
   size?: "sm" | "md" | "lg";
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
 const Button = ({
@@ -13,11 +16,15 @@ const Button = ({
   href,
   variant = "primary",
   size = "md",
+  type = "button",
+  disabled = false,
+  onClick,
 }: ButtonProps) => {
   const className = `
     ${styles.button}
     ${styles[variant]}
     ${styles[size]}
+    ${disabled ? styles.disabled : ""}
   `;
 
   if (href) {
@@ -28,7 +35,16 @@ const Button = ({
     );
   }
 
-  return <button className={className}>{children}</button>;
+  return (
+    <button
+      type={type}
+      className={className}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;

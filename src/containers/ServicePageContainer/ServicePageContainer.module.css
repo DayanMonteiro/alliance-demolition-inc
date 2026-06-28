@@ -1,0 +1,19 @@
+.ServicePageContainer {
+  width: 100%;
+  background-color: var(--background);
+}
+
+.content {
+  width: 100%;
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  padding: 70px 24px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 50px 20px;
+  }
+}

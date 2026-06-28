@@ -1,7 +1,6 @@
 .hero {
   position: relative;
-
-  min-height: 700px;
+  min-height: 500px;
 
   display: flex;
   align-items: center;
@@ -53,7 +52,7 @@
 .content h1 {
   color: #ffffff;
 
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
 
   line-height: 1.1;
@@ -67,7 +66,7 @@
   color: rgba(255, 255, 255, 0.9);
 
   font-size: 1.15rem;
-  line-height: 1.8;
+  line-height: 1.4;
 
   max-width: 800px;
 

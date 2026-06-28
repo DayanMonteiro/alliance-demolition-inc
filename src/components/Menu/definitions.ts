@@ -9,7 +9,7 @@ export const menuLinks = [
   },
   {
     label: "SERVICES",
-    href: "/services",
+    href: "/company-services",
     hasDropdown: true,
   },
   {
@@ -33,46 +33,46 @@ export const menuLinks = [
 export const servicesMenuItems = [
   {
     label: "DEMOLITION CONTRACTOR",
-    href: "/services/demolition-contractor",
+    href: "/company-services/demolition-contractor",
   },
   {
     label: "DEMOLITION SERVICES",
-    href: "/services/demolition-services",
+    href: "/company-services/demolition-services",
   },
   {
     label: "BASEMENT EXCAVATION",
-    href: "/services/basement-excavation",
+    href: "/company-services/basement-excavation",
   },
   {
     label: "DRIVEWAY EXCAVATION",
-    href: "/services/driveway-excavation",
+    href: "/company-services/driveway-excavation",
   },
   {
     label: "EARTH MOVING",
-    href: "/services/earth-moving",
+    href: "/company-services/earth-moving",
   },
   {
     label: "EXCAVATION COMPANY",
-    href: "/services/excavation-company",
+    href: "/company-services/excavation-company",
   },
   {
     label: "EXCAVATION SERVICES",
-    href: "/services/excavation-services",
+    href: "/company-services/excavation-services",
   },
   {
     label: "GRADING",
-    href: "/services/grading",
+    href: "/company-services/grading",
   },
   {
     label: "LAND CLEARING",
-    href: "/services/land-clearing",
+    href: "/company-services/land-clearing",
   },
   {
     label: "SITE PREPARATION SERVICES",
-    href: "/services/site-preparation-services",
+    href: "/company-services/site-preparation-services",
   },
   {
     label: "TRENCHING SERVICES",
-    href: "/services/trenching-services",
+    href: "/company-services/trenching-services",
   },
 ];
