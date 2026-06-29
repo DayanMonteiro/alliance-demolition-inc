@@ -38,9 +38,9 @@
   margin-bottom: 24px;
 }
 
-/* .spacing {
+.spacing {
   margin-top: 40px;
-} */
+}
 
 @media (max-width: 768px) {
   .section {
