@@ -1,22 +1,18 @@
 export const galleryVideos = [
   {
-    title: "Alliance Demolition Video 01",
+    title: "Alliance Demolition",
     src: "/video/site-v01-web.mp4",
   },
   {
-    title: "Alliance Demolition Video 02",
-    src: "/video/site-v02-web.mp4",
-  },
-  {
-    title: "Alliance Demolition Video 03",
+    title: "Alliance Demolition",
     src: "/video/site-v03-web.mp4",
   },
   {
-    title: "Alliance Demolition Video 04",
+    title: "Alliance Demolition",
     src: "/video/site-v04-web.mp4",
   },
   {
-    title: "Alliance Demolition Video 05",
+    title: "Alliance Demolition",
     src: "/video/site-v05-web.mp4",
   },
 ];
