@@ -50,13 +50,13 @@ export const socialMedia = [
   {
     name: "Facebook",
     image: "/social/facebook.svg",
-    href: "https://www.facebook.com/seu-perfil",
+    href: "https://www.facebook.com/people/Alliance-Demolition-Inc/100072069476713/",
     backgroundColor: "#ffffff",
   },
   {
     name: "Instagram",
     image: "/social/instagram.svg",
-    href: "https://www.instagram.com/seu-perfil",
+    href: "https://www.instagram.com/alliancedemolition/",
     backgroundColor: "linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4)",
   },
 ];
